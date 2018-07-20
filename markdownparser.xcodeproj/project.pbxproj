@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F8068A2101E229001A250C /* autolink.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52A618FEC16B00D98223 /* autolink.h */; };
+		84F8068B2101E229001A250C /* buffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52A818FEC16B00D98223 /* buffer.h */; };
+		84F8068C2101E229001A250C /* html_blocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52A918FEC16B00D98223 /* html_blocks.h */; };
+		84F8068D2101E229001A250C /* markdown.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52AB18FEC16B00D98223 /* markdown.h */; };
+		84F8068E2101E229001A250C /* src_map.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52AD18FEC16B00D98223 /* src_map.h */; };
+		84F8068F2101E229001A250C /* stack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAE52AF18FEC16B00D98223 /* stack.h */; };
+		84F806902101E229001A250C /* ByteBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB955A43190119CE006684B8 /* ByteBuffer.h */; };
+		84F806912101E229001A250C /* MarkdownNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBE7FEC11922E27300A1649E /* MarkdownNode.h */; };
+		84F806922101E229001A250C /* MarkdownParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BB955A4719011A71006684B8 /* MarkdownParser.h */; };
 		BB2672EE19067E6A0053EEFA /* ByteBuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = BB2672ED19067E6A0053EEFA /* ByteBuffer.cc */; };
 		BB2672F019067EA90053EEFA /* test-ByteBuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = BB2672EF19067EA90053EEFA /* test-ByteBuffer.cc */; };
 		BB8C3E6C1923F04E00EF36FA /* libmarkdownparser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAE529B18FEBFAE00D98223 /* libmarkdownparser.a */; };
@@ -47,6 +56,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		84F806892101E20A001A250C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/include";
+			dstSubfolderSpec = 0;
+			files = (
+				84F8068A2101E229001A250C /* autolink.h in CopyFiles */,
+				84F8068B2101E229001A250C /* buffer.h in CopyFiles */,
+				84F8068C2101E229001A250C /* html_blocks.h in CopyFiles */,
+				84F8068D2101E229001A250C /* markdown.h in CopyFiles */,
+				84F8068E2101E229001A250C /* src_map.h in CopyFiles */,
+				84F8068F2101E229001A250C /* stack.h in CopyFiles */,
+				84F806902101E229001A250C /* ByteBuffer.h in CopyFiles */,
+				84F806912101E229001A250C /* MarkdownNode.h in CopyFiles */,
+				84F806922101E229001A250C /* MarkdownParser.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB955A4B19011E85006684B8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +259,7 @@
 				BBAE529718FEBFAE00D98223 /* Sources */,
 				BBAE529818FEBFAE00D98223 /* Frameworks */,
 				BBAE529918FEBFAE00D98223 /* Headers */,
+				84F806892101E20A001A250C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -398,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/lib/debug";
 				EXECUTABLE_PREFIX = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -407,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/lib";
 				EXECUTABLE_PREFIX = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
